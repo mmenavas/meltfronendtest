@@ -1,16 +1,34 @@
+/*
+ * Global Styles
+ */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Adelle Basic";
+  font-weight: 100;
+  color: #89b8ea;
+}
+
+h2 {
+  font-size:3.2rem;
+}
+
 
 .page-header {
   height:100px;
   width: 100%;
 }
 
-.main-navigation {
+.main-navigation {}
 
-}
 
+/*
+ * Section: Hero
+ */
 .hero {
   background-color: #89b8ea;
   background-image: url('../images/hero-home.jpg');
@@ -33,19 +51,27 @@ body {
   padding-bottom: 60px;
 }
 
-.hero__image {
-}
+.hero__image {}
 
 .hero__callout {
+  color:#fff;
   font-size:3.2rem;
   font-weight: 100;
   margin-top:40px;
+  text-align: center;
 }
 
 .hero__text {
-  font-weight: 100;
   line-height: 150%;
-  font-size: 1.2rem;
+}
+
+.hero__button .btn-secondary-outline {
+  color:#fff;
+  border-color: #fff;
+}
+
+.hero__button .btn-secondary-outline:hover {
+  background-color: #89b8ea;
 }
 
 @media(min-width:62rem) {
@@ -57,5 +83,23 @@ body {
   .hero__button {
     text-align: left;
   }
+}
+
+
+/*
+ * Section: What We Do
+ */
+.what-we-do {
+  text-align: center;
+}
+.what-we-do .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.what-we-do__callout {}
+.what-we-do__text {}
+.what-we-do__icons {
+  margin-top: 20px;
 }
 

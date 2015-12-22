@@ -42,11 +42,57 @@ img {
  */
 .page-header {
   height:100px;
+  position: relative;
+  z-index: 100;
   width: 100%;
 }
 
-.main-navigation {}
+.page-header .container {
+  padding-top:20px;
+  padding-bottom:20px;
+}
 
+.logo {
+  width:auto;
+}
+
+.main-navigation {
+  float: right;
+  margin-bottom: 40px;
+}
+
+.main-navigation .nav-item {
+  width:100%;
+  text-align: right;
+  padding:0;
+  margin:0 0 4px;
+}
+
+.main-navigation .nav-link {
+  color:#fff;
+  font-family: "Adelle Basic";
+  text-transform: uppercase;
+  font-size:1.6rem;
+}
+
+.main-navigation .nav-link:hover {
+  border-bottom:2px solid #000;
+}
+
+@media(min-width:48rem) {
+  .main-navigation {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .main-navigation .nav-item {
+    width:auto;
+    display: inline-block;
+    margin-left: 12px;
+  }
+  .main-navigation .nav-link {
+    font-size:1.2rem;
+  }
+}
 
 /*
  * Section: Hero
@@ -100,16 +146,17 @@ img {
   background-color: #89b8ea;
 }
 
-@media(min-width:62rem) {
-  .hero__image-wrapper {
-    text-align: left;
-  }
+@media(min-width:34rem) {
   .hero__image-wrapper img {
-    max-width: 400px;
+    max-width: 360px;
   }
+}
+
+@media(min-width:62rem) {
   .hero__callout {
     margin-top:120px;
   }
+  .hero__image-wrapper,
   .hero__callout,
   .hero__text,
   .hero__button {

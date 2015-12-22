@@ -136,6 +136,15 @@ h2 {
   z-index: 100;
 }
 
+.careers .btn-secondary-outline {
+  color:#fff;
+  border-color: #fff;
+}
+
+.careers .btn-secondary-outline:hover {
+  background-color: #89b8ea;
+}
+
 /*
  * Section: Video
  */
@@ -198,3 +207,34 @@ h2 {
   max-height:36px;
   padding-top: 4px;
 }
+
+
+/*
+ * Section: Contact
+ */
+.contact {}
+
+.contact__callout,
+.contact__text {
+  text-align: center;
+}
+
+.contact__button {
+  text-align: center;
+  padding:10px 0;
+}
+
+.form-control {
+  margin:10px 0;
+}
+
+
+.contact .btn-secondary-outline {
+  color:#999;
+  border-color: #999;
+}
+
+.contact .btn-secondary-outline:hover {
+  background-color: #89b8ea;
+}
+
